@@ -591,3 +591,18 @@ section {
     font-weight: bold;
     cursor: pointer;
 }
+
+/* Puedes agregar estilos personalizados aquí costos */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+/* Agrega más estilos según sea necesario */

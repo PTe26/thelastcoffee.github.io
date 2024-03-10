@@ -1,7 +1,7 @@
 // costos.js
 
 function calcularCostos() {
-    // Obteniendo los valores de los campos de entrada
+    // Obtén los valores de los campos
     var alquiler = parseFloat(document.getElementById("alquiler").value) || 0;
     var salariosFijos = parseFloat(document.getElementById("salariosFijos").value) || 0;
     var serviciosPublicos = parseFloat(document.getElementById("serviciosPublicos").value) || 0;
@@ -17,12 +17,11 @@ function calcularCostos() {
     var PlubMark = parseFloat(document.getElementById("PlubMark").value) || 0;
     var ComVentas = parseFloat(document.getElementById("ComVentas").value) || 0;
 
-    // Calculando los costos totales
-    var costoFijos = alquiler + salariosFijos + serviciosPublicos + seguros + Mantrepa + DepreMobi + ImpLic;
-    var costoVariables = materiaPrima + envases + SalEmpleH + CombusTransp + PlubMark + ComVentas;
-    var costoTotal = costoFijos + costoVariables;
+    // Calcula el costo total
+    var costoTotal = alquiler + salariosFijos + serviciosPublicos + seguros + Mantrepa + DepreMobi + ImpLic +
+        materiaPrima + envases + SalEmpleH + CombusTransp + PlubMark + ComVentas;
 
-    // Mostrando el resultado
+    // Actualiza el resultado en el HTML
     document.getElementById("costoTotal").innerHTML = "Costo Total: $" + costoTotal.toFixed(2);
 }
 

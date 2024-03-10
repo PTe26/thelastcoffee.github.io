@@ -1,0 +1,120 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #2C3E50, #1F2B38);
+    color: #ECF0F1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #34495E;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #ECF0F1;
+}
+
+/* Estilos para la tabla de costos */
+.costos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.costos-table caption {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ECF0F1;
+    padding: 10px;
+}
+
+.costos-table td {
+    padding: 15px;
+    border-bottom: 1px solid #4B6584;
+}
+
+.costos-table td:first-child {
+    text-align: right;
+    font-weight: bold;
+    width: 40%;
+    background-color: #34495E;
+}
+
+.costos-table input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4B6584;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    color: #ECF0F1;
+    background-color: #2C3E50;
+}
+
+.costos-table input[type="number"]:focus {
+    border-color: #E74C3C;
+    outline: none;
+}
+
+/* Estilos para los botones */
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498DB;
+    color: #ECF0F1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #2980B9;
+}
+
+/* Estilos para el resultado */
+.resultado-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2C3E50;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.resultado-container h2 {
+    color: #ECF0F1;
+    margin-bottom: 10px;
+}
+
+.resultado-container p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+
+    .costos-table td:first-child {
+        width: auto;
+    }
+
+    button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

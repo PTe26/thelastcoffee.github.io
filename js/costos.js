@@ -25,3 +25,14 @@ function calcularCostos() {
     // Mostrando el resultado
     document.getElementById("costoTotal").innerHTML = "Costo Total: $" + costoTotal.toFixed(2);
 }
+
+function borrarRegistro() {
+    // Obtén todos los campos de entrada y restablece sus valores
+    var campos = document.querySelectorAll('input[type="number"]');
+    campos.forEach(function (campo) {
+        campo.value = "";
+    });
+
+    // Restablece el resultado a $0
+    document.getElementById("costoTotal").innerHTML = "Costo Total: $0";
+}

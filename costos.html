@@ -35,7 +35,17 @@
         <p id="costoTotal">Costo Total: $0</p>
     </div>
 
-    <script src="costos.js"></script>
+    <script>
+        function calcularCostos() {
+            const costoFijo = parseFloat(document.getElementById('costoFijo').value) || 0;
+            const costoVariable = parseFloat(document.getElementById('costoVariable').value) || 0;
+            const cantidad = parseInt(document.getElementById('cantidad').value) || 0;
+
+            const costoTotal = costoFijo + costoVariable * cantidad;
+
+            document.getElementById('costoTotal').innerText = `Costo Total: $${costoTotal.toFixed(2)}`;
+        }
+    </script>
 </body>
 
 </html>

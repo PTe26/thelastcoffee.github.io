@@ -6,60 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Costos Fijos y Variables</title>
+    <title>Costos de Producción - Cafetería</title>
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Formulario de Costos</h1>
+        <h1>Costos de Producción - Cafetería</h1>
 
         <form id="costosForm">
+            <h2>Costos Fijos</h2>
+
             <div class="input-container">
-                <label for="costoFijo">Costo Fijo:</label>
-                <input type="number" id="costoFijo" placeholder="Ingrese el costo fijo">
+                <label for="alquiler">Alquiler del Local:</label>
+                <input type="number" id="alquiler" placeholder="Ingrese el costo de alquiler">
             </div>
 
             <div class="input-container">
-                <label for="costoVariable">Costo Variable por Unidad:</label>
-                <input type="number" id="costoVariable" placeholder="Ingrese el costo variable por unidad">
+                <label for="salariosFijos">Salarios de Empleados Fijos:</label>
+                <input type="number" id="salariosFijos" placeholder="Ingrese el costo de salarios fijos">
+            </div>
+
+            <!-- Agrega más campos para otros costos fijos -->
+
+            <h2>Costos Variables</h2>
+
+            <div class="input-container">
+                <label for="materiaPrima">Materia Prima:</label>
+                <input type="number" id="materiaPrima" placeholder="Ingrese el costo de materia prima">
             </div>
 
             <div class="input-container">
-                <label for="cantidad">Cantidad de Unidades:</label>
-                <input type="number" id="cantidad" placeholder="Ingrese la cantidad de unidades">
+                <label for="envases">Envases y Empaques:</label>
+                <input type="number" id="envases" placeholder="Ingrese el costo de envases">
             </div>
+
+            <!-- Agrega más campos para otros costos variables -->
 
             <button type="button" onclick="calcularCostos()">Calcular</button>
         </form>
 
-        <h2>Detalle de Costos:</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Descripción</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Costo Fijo</td>
-                    <td id="detalleCostoFijo">$0</td>
-                </tr>
-                <tr>
-                    <td>Costo Variable por Unidad</td>
-                    <td id="detalleCostoVariable">$0</td>
-                </tr>
-                <tr>
-                    <td>Cantidad de Unidades</td>
-                    <td id="detalleCantidad">0</td>
-                </tr>
-                <tr>
-                    <td>Costo Total</td>
-                    <td id="detalleCostoTotal">$0</td>
-                </tr>
-            </tbody>
-        </table>
+        <h2>Resultado</h2>
+        <p id="costoTotal">Costo Total: $0</p>
     </div>
 
     <script src="costos.js"></script>

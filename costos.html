@@ -6,46 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Dashboard de Costos</title>
+    <title>Costos Fijos y Variables</title>
 </head>
 
 <body>
 
     <div class="container">
-        <h1>Dashboard de Costos</h1>
+        <h1>Formulario de Costos</h1>
 
-        <div class="input-container">
-            <label for="costoFijo">Costo Fijo:</label>
-            <input type="number" id="costoFijo" placeholder="Ingrese el costo fijo">
-        </div>
+        <form id="costosForm">
+            <div class="input-container">
+                <label for="costoFijo">Costo Fijo:</label>
+                <input type="number" id="costoFijo" placeholder="Ingrese el costo fijo">
+            </div>
 
-        <div class="input-container">
-            <label for="costoVariable">Costo Variable por Unidad:</label>
-            <input type="number" id="costoVariable" placeholder="Ingrese el costo variable por unidad">
-        </div>
+            <div class="input-container">
+                <label for="costoVariable">Costo Variable por Unidad:</label>
+                <input type="number" id="costoVariable" placeholder="Ingrese el costo variable por unidad">
+            </div>
 
-        <div class="input-container">
-            <label for="cantidad">Cantidad de Unidades:</label>
-            <input type="number" id="cantidad" placeholder="Ingrese la cantidad de unidades">
-        </div>
+            <div class="input-container">
+                <label for="cantidad">Cantidad de Unidades:</label>
+                <input type="number" id="cantidad" placeholder="Ingrese la cantidad de unidades">
+            </div>
 
-        <button onclick="calcularCostos()">Calcular</button>
+            <button type="button" onclick="calcularCostos()">Calcular</button>
+        </form>
 
-        <h2>Resultados:</h2>
-        <p id="costoTotal">Costo Total: $0</p>
+        <h2>Detalle de Costos:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Descripción</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Costo Fijo</td>
+                    <td id="detalleCostoFijo">$0</td>
+                </tr>
+                <tr>
+                    <td>Costo Variable por Unidad</td>
+                    <td id="detalleCostoVariable">$0</td>
+                </tr>
+                <tr>
+                    <td>Cantidad de Unidades</td>
+                    <td id="detalleCantidad">0</td>
+                </tr>
+                <tr>
+                    <td>Costo Total</td>
+                    <td id="detalleCostoTotal">$0</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <script>
-        function calcularCostos() {
-            const costoFijo = parseFloat(document.getElementById('costoFijo').value) || 0;
-            const costoVariable = parseFloat(document.getElementById('costoVariable').value) || 0;
-            const cantidad = parseInt(document.getElementById('cantidad').value) || 0;
-
-            const costoTotal = costoFijo + costoVariable * cantidad;
-
-            document.getElementById('costoTotal').innerText = `Costo Total: $${costoTotal.toFixed(2)}`;
-        }
-    </script>
+    <script src="costos.js"></script>
 </body>
 
 </html>

@@ -16,6 +16,7 @@ function calcularCostos() {
     var CombusTransp = parseFloat(document.getElementById("CombusTransp").value) || 0;
     var PlubMark = parseFloat(document.getElementById("PlubMark").value) || 0;
     var ComVentas = parseFloat(document.getElementById("ComVentas").value) || 0;
+    
 
     // Calcula el costo total
     var costoTotal = alquiler + salariosFijos + serviciosPublicos + seguros + Mantrepa + DepreMobi + ImpLic +

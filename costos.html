@@ -29,19 +29,7 @@
                     <td><label for="serviciosPublicos">Servicios públicos:</label></td>
                     <td><input type="number" id="serviciosPublicos" placeholder="Ingrese el costo de Servicios Públicos"></td>
                 </tr>
-                <!-- Agrega más filas para otros costos fijos -->
-            </table>
 
-            <table class="costos-table">
-                <caption>Costos Variables</caption>
-                <tr>
-                    <td><label for="materiaPrima">Materia Prima:</label></td>
-                    <td><input type="number" id="materiaPrima" placeholder="Ingrese el costo de materia prima"></td>
-                </tr>
-                <tr>
-                    <td><label for="envases">Envases y Empaques:</label></td>
-                    <td><input type="number" id="envases" placeholder="Ingrese el costo de envases"></td>
-                </tr>
                 <tr>
                     <td><label for="serviciosPublicosVar">Servicios públicos:</label></td>
                     <td><input type="number" id="serviciosPublicosVar" placeholder="Ingrese el costo de Servicios Públicos"></td>
@@ -62,6 +50,37 @@
                     <td><label for="ImpLic">Impuestos y licencias:</label></td>
                     <td><input type="number" id="ImpLic" placeholder="Ingrese el costo Impuestos y licencias"></td>
                 </tr>
+            </table>
+
+            <table class="costos-table">
+                <caption>Costos Variables</caption>
+                <tr>
+                    <td><label for="materiaPrima">Materia Prima:</label></td>
+                    <td><input type="number" id="materiaPrima" placeholder="Ingrese el costo de materia prima"></td>
+                </tr>
+                <tr>
+                    <td><label for="envases">Envases y Empaques:</label></td>
+                    <td><input type="number" id="envases" placeholder="Ingrese el costo de envases"></td>
+                </tr>
+                <tr>
+                    <td><label for="envases">Salarios de empleados temporales o por horas:</label></td>
+                    <td><input type="number" id="SalEmpleH" placeholder="Ingrese el costo de Salarios de empleados temporales o por horas"></td>
+                </tr>
+                 <tr>
+                    <td><label for="envases">Combustible para el transporte de mercancías:</label></td>
+                    <td><input type="number" id="CombusTransp" placeholder="Ingrese el costo de Combustible para el transporte de mercancías"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="envases">Publicidad y marketing:</label></td>
+                    <td><input type="PlubMark" id="CombusTransp" placeholder="Ingrese el costo de Publicidad y marketing"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="envases">Comisiones por ventas:</label></td>
+                    <td><input type="PlubMark" id="Comvent" placeholder="Ingrese el costo de Comisiones por ventas"></td>
+                </tr>
+                
             </table>
 
             <button type="button" onclick="calcularCostos()">Calcular</button>

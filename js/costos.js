@@ -25,7 +25,7 @@ function calcularCostos() {
     var costoTotal = costosFijos + costosVariables;
 
     // Actualiza el resultado en el HTML
-    document.getElementById("costoTotal").textContent = "Costo Total: $" + costoTotal.toFixed(2);
+    document.getElementById("costoTotal").textContent = "Costo Total:  S/" + costoTotal.toFixed(2);
 
     // Llama a la función para crear o actualizar el gráfico
     crearActualizarGrafico(costosFijos, costosVariables);

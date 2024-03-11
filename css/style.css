@@ -606,3 +606,50 @@ section {
 }
 
 /* Agrega más estilos según sea necesario */
+
+    .team {
+        padding: 80px 0;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    .team h1 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+
+    .team-member {
+        display: inline-block;
+        margin: 0 15px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .team-member:hover {
+        transform: translateY(-10px);
+    }
+
+    .member-info {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .member-info img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 15px;
+    }
+
+    .member-info h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .member-info p {
+        color: #777;
+        margin-bottom: 20px;
+    }

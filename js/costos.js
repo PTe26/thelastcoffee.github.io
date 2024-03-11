@@ -39,7 +39,7 @@ function borrarRegistro() {
     });
 
     // Restablece el resultado a $0
-    document.getElementById("costoTotal").textContent = "Costo Total: $0";
+    document.getElementById("costoTotal").textContent = "Costo Total: S/0";
 
     // Llama a la función para crear o actualizar el gráfico con valores 0
     crearActualizarGrafico(0, 0);
